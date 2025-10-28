@@ -1,0 +1,17 @@
+# 이미지 파일 제외
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+*.png
+*.PNG
+
+# 텍스트 파일 제외
+*.txt
+*.TXT
+
+# 대소문자 혼합 케이스도 처리
+*.[Jj][Pp][Gg]
+*.[Jj][Pp][Ee][Gg]
+*.[Pp][Nn][Gg]
+*.[Tt][Xx][Tt]
