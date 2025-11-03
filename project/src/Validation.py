@@ -53,6 +53,11 @@ class ImageValidation:
         print(f"경계면 지수 : {edge_index:.2f} ")
         print("-------------------")
 
+        """
+        0.00 ~ 0.29 흐릿하거나 초점이 안 맞음
+        0.30 ~ 0.79 적절한 대비와 선명도, 정상 이미지
+        0.80 ~ 1.00 노이즈 과다, 지나치게 선명하거나 샤프닝됨
+        """
         if plot:
              self.imagePlot(image, gray, edges, sobel_magnitude, laplacian)
 

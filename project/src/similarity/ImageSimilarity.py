@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import torch
 import torch.nn as nn
-from Validation import ImageValidation
+from src.Validation import ImageValidation
 
 class ImageSimilarity(ImageValidation):
     """"""
@@ -16,7 +16,10 @@ class ImageSimilarity(ImageValidation):
 
 def main(image, plot):
     runner = ImageSimilarity()
-    runner._EdgeDetection(image, plot)
+    ImageValidation = runner._EdgeDetection(image, plot)
+
+    if ImageValidation:
+        pass
 
 
 if __name__ == '__main__':
